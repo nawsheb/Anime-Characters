@@ -1,6 +1,5 @@
 body {
-     background-color: purple;
-    
+     background-image: url("https://thumbs.gfycat.com/DeepTartJaguarundi-size_restricted.gif");
 }
 
 .heading {
@@ -61,12 +60,13 @@ img {
   height:50px;
 }
 .images {
-  width:1280px;
+  
   margin: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background:pink;
+  
+  
 }
 
 .images .box {
