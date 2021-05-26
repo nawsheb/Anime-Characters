@@ -1,13 +1,13 @@
 let imgs = [];
-
-
+var urlRegex = /^https?:\/\/.*\/.*\.(png|gif|webp|jpeg|jpg)\??.*$/gmi;
 $(".submt").click(function() {
     var pics = $(".pic-url").val();
     imgs.push(pics);
-      var urlRegex = /((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z0-9\&\.\/\?\:@\-_=#])*/;
+  console.log(pics);
+      
       if (pics = pics.match(urlRegex)) {
         
-        $(".images").append('<div class="box"><div class="imgBox"><img src="' + pics + '" ></div> </div>');
+        $(".images").append('<div class="box"><div class="imgBox"><img src="' + pics + '" ></div></div>');
         
       }
   
@@ -17,3 +17,4 @@ $(".submt").click(function() {
    
     
 });
+
